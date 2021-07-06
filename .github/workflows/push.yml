@@ -56,4 +56,6 @@ jobs:
           DOCKER_TAG: ci
           DNAME: ${{ secrets.DNAME }}
           DPASS: ${{ secrets.DPASS }}
-        run: make push-chaos-scheduler
+        run: |
+          echo hello
+          make push-chaos-scheduler
