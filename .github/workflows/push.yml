@@ -51,8 +51,8 @@ jobs:
 
       - name: Build & Push Docker Image
         env:
-          DOCKER_REPO: ${{ secrets.DOCKER_REPO }}
-          DOCKER_IMAGE: ${{ secrets.DOCKER_IMAGE }}
+          DOCKER_REPO: shubh214
+          DOCKER_IMAGE: chaos-scheduler
           DOCKER_TAG: ci
           DNAME: ${{ secrets.DNAME }}
           DPASS: ${{ secrets.DPASS }}

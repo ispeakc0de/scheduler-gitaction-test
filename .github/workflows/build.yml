@@ -41,7 +41,7 @@ jobs:
 
       - name: Build Docker Image
         env:
-          DOCKER_REPO: litmuschaos
+          DOCKER_REPO: shubh214
           DOCKER_IMAGE: chaos-schedulerr
           DOCKER_TAG: ci
         run: |

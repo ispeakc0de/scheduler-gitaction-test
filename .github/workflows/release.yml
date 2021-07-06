@@ -55,8 +55,8 @@ jobs:
 
       - name: Build & Push Docker Image with version tag
         env:
-          DOCKER_REPO: ${{ secrets.DOCKER_REPO }}
-          DOCKER_IMAGE: ${{ secrets.DOCKER_IMAGE }}
+          DOCKER_REPO: shubh214
+          DOCKER_IMAGE: chaos-scheduler
           DOCKER_TAG: ${RELEASE_TAG}
           DNAME: ${{ secrets.DNAME }}
           DPASS: ${{ secrets.DPASS }}
@@ -64,8 +64,8 @@ jobs:
 
       - name: Build & Push Docker Image with latest
         env:
-          DOCKER_REPO: ${{ secrets.DOCKER_REPO }}
-          DOCKER_IMAGE: ${{ secrets.DOCKER_IMAGE }}
+          DOCKER_REPO: shubh214
+          DOCKER_IMAGE: chaos-scheduler
           DOCKER_TAG: latest
           DNAME: ${{ secrets.DNAME }}
           DPASS: ${{ secrets.DPASS }}
