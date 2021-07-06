@@ -26,7 +26,7 @@ jobs:
 
   image-build:
     runs-on: ubuntu-latest
-    needs: tests
+    needs: pre-checks
     steps:
       # Checkout to the latest commit
       # On specific directory/path
