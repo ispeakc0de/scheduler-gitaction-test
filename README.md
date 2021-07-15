@@ -245,3 +245,6 @@ They are available at [litmus docs](https://docs.litmuschaos.io)
 
 The Chaos scheduler is in _alpha_ stage and needs all the help you can provide! Please contribute by raising issues, 
 improving the documentation, contributing to the core framework and tooling, etc.
+
+
+--
