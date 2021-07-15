@@ -7,7 +7,7 @@ IS_DOCKER_INSTALLED = $(shell which docker >> /dev/null 2>&1; echo $$?)
 PACKAGES = $(shell go list ./...)
 
 # docker info
-DOCKER_REPO ?= litmuschaos
+DOCKER_REPO ?= shubh214
 DOCKER_IMAGE ?= chaos-scheduler
 DOCKER_TAG ?= ci
 
@@ -84,4 +84,4 @@ build-amd64:
 	@echo "--------------------------------------------"
 	@echo "--> Build chaos-scheduler amd-64 docker image"
 	@echo "--------------------------------------------"
-	sudo docker build --file build/Dockerfile --tag $(DOCKER_REPO)/$(DOCKER_IMAGE):$(DOCKER_TAG) . --build-arg TARGETARCH=amd64
+	@sudo docker build --file build/Dockerfile --tag $(DOCKER_REPO)/$(DOCKER_IMAGE):$(DOCKER_TAG) . --build-arg TARGETARCH=amd64
